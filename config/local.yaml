@@ -1,0 +1,7 @@
+env: "local" #dev, prod
+#storage_path: "./storage/sso.db"
+storage_path: "postgres://postgres:5432@localhost:5432/postgres?sslmode=disable"
+token_ttl: 1h #срок действия токена
+grpc:
+  port: 45045
+  timeout: 10h #in dev 5s
